@@ -1,0 +1,17 @@
+{
+  "name": "NodeWeb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set DEBUG=app:*&& nodemon ./platzi-video-back/index.js",
+    "start": "set NODE_ENV=production node ./platzi-video-back/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "nodeBasics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeBasics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "moment": "^2.29.1",
+    "sharp": "^0.27.1"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="./chat.js"></script>
+    <link rel="stylesheet" href="./chat.css">
+</head>
+<body>
+    <div class="app">
+        <section class="chat-board">
+            <h1>SALA </h1>
+            <div class="messages-container">
+                
+            </div>
+            <form action="" class='input-form'>
+                <input class="message-input" type="text" />
+                <button class="sumbit-btn" type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="active-you">
+            <h3 class="active-name">PERFIL </h3>
+            <div class="profile">
+                <span class="active-avatar">🤣</span>
+                <h1 class="active-name">ANONIMUS </h1>
+                <form action="" class='name-input-form'>
+                    <input class="profile-name" type="text">
+                </form>
+            </div>
+        </section>
+        
+        <section class="active-users">
+            <h3>Usuario Activos </h3>
+            <div class="active-users-container">
+
+            </div>
+        </section>
+        
+        <section class="active-rooms">
+            <h3>Salas de Chat activas </h3>
+            <div class="active-rooms-container">
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

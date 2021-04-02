@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid; 
+    background: #37313b;
+    place-items: center;
+}
+.input-form{
+   display: grid;
+   grid-template-columns: 1fr max-content;
+}
+.app{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template: max-content repeat(2,1fr) /  repeat(3,1fr);
+    gap: 40px;
+}
+.app .chat-board{
+    grid-column: 1/ span 2;
+    grid-row: 1 /span 3;
+    display: grid; 
+    grid-template-rows: max-content 1fr max-content; 
+}
+.app .chat-board .messages-container{
+    display: grid;
+    align-content: end;
+}
+
+.app .chat-board h1{
+    background: #8d7cda5e;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+section h3{
+    color: white;
+    background: #8d7cda5e;
+    padding: 5px;
+    text-align: center;
+}
+
+.messages-container{
+    border: dotted 1px white ;
+    margin: 5% 0  8% 0;
+    padding: 5%;
+    border-radius: 5%;
+}
+.active-rooms, .active-users{
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    gap: 3%;
+}
+
+.active-users-container, .active-rooms-container{
+    height: 100%;
+    border: dotted 1px white ;
+    padding: 5%;
+    border-radius: 5%;
+}
+.messages-container > div{
+    color : white;
+}
+
+.messages-container .messages .person{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.message {
+    margin-top: 5px;
+}
+.message.me {
+    margin-top: 5px;
+    color: #acabab;
+}
+
+.profile{
+    display: grid;
+    grid-template: max-content  1fr/ max-content 1fr;
+    gap: 4px 10px
+}
+.profile .active-avatar {
+    grid-row: span 2;
+    align-self: center;
+    font-size: 40px;
+
+}
+.profile .active-name {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.profile-name{
+    margin: 0 10%;
+    width: 80%;
+}
+
+
+.user {
+    color : white;
+    text-align: center
+}
